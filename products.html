@@ -36,21 +36,25 @@
 <h3>Classic Sourdough</h3>
 <p>Placeholder text: 24-hour fermented, crackling crust, open crumb.</p>
 <p class="price">$7&ndash;$9</p>
+<button type="button" class="add-to-order" data-item="Classic Sourdough">Add to Pre-Order</button>
 </div>
 <div class="card">
 <h3>Whole Wheat Country Loaf</h3>
 <p>Placeholder text: Hearty and nutty, milled from a local wheat blend.</p>
 <p class="price">$6&ndash;$8</p>
+<button type="button" class="add-to-order" data-item="Whole Wheat Country Loaf">Add to Pre-Order</button>
 </div>
 <div class="card">
 <h3>Rosemary Sea Salt Focaccia</h3>
 <p>Placeholder text: Olive oil, flaky salt, fresh rosemary. This week's featured item.</p>
 <p class="price">$8&ndash;$10</p>
+<button type="button" class="add-to-order" data-item="Rosemary Sea Salt Focaccia">Add to Pre-Order</button>
 </div>
 <div class="card">
 <h3>Everyday Sandwich Loaf</h3>
 <p>Placeholder text: Soft crumb, ideal for weekday lunches.</p>
 <p class="price">$5&ndash;$7</p>
+<button type="button" class="add-to-order" data-item="Everyday Sandwich Loaf">Add to Pre-Order</button>
 </div>
 </div>
 </section>
@@ -62,16 +66,19 @@
 <h3>Butter Croissants</h3>
 <p>Placeholder text: Laminated dough, baked until deeply golden.</p>
 <p class="price">$3&ndash;$4 each</p>
+<button type="button" class="add-to-order" data-item="Butter Croissants">Add to Pre-Order</button>
 </div>
 <div class="card">
 <h3>Morning Buns</h3>
 <p>Placeholder text: Cinnamon-sugar croissant dough, twisted and baked.</p>
 <p class="price">$4&ndash;$5 each</p>
+<button type="button" class="add-to-order" data-item="Morning Buns">Add to Pre-Order</button>
 </div>
 <div class="card">
 <h3>Seasonal Fruit Danish</h3>
 <p>Placeholder text: Rotates with what's in season from local orchards.</p>
 <p class="price">$4&ndash;$6 each</p>
+<button type="button" class="add-to-order" data-item="Seasonal Fruit Danish">Add to Pre-Order</button>
 </div>
 </div>
 </section>
@@ -83,16 +90,32 @@
 <h3>Celebration Layer Cake</h3>
 <p>Placeholder text: Custom flavors and decorating for birthdays and events. Ask about lead times.</p>
 <p class="price">$35&ndash;$65</p>
+<button type="button" class="add-to-order" data-item="Celebration Layer Cake">Add to Pre-Order</button>
 </div>
 <div class="card">
 <h3>Individual Cupcakes</h3>
 <p>Placeholder text: Great for office parties and small gatherings.</p>
 <p class="price">$3&ndash;$4 each</p>
+<button type="button" class="add-to-order" data-item="Individual Cupcakes">Add to Pre-Order</button>
 </div>
 <div class="card">
 <h3>Event &amp; Wedding Cakes</h3>
 <p>Placeholder text: Consultations available for event planners; please pre-order at least two weeks out.</p>
 <p class="price">Priced by consultation</p>
+<a href="contact.html" class="card-link">Request a Consultation</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="order-heading">
+<h2 id="order-heading">Your Pre-Order List</h2>
+<div class="info-snippet" id="order-summary">
+<p>Tap &ldquo;Add to Pre-Order&rdquo; on any item above to build a list. We&rsquo;ll carry it over to the pre-order form for you &mdash; nothing is submitted to the bakery until you fill out and send the form on the <a href="contact.html">Contact &amp; Pre-Order page</a>.</p>
+<p id="order-empty-message">Your list is empty right now.</p>
+<ul id="order-list" class="preorder-list" aria-live="polite"></ul>
+<p>Items in list: <span id="order-count">0</span></p>
+<div class="order-actions">
+<button type="button" id="clear-order">Clear List</button>
+<a href="contact.html" class="button-link">Continue to Pre-Order Form</a>
 </div>
 </div>
 </section>
@@ -101,5 +124,8 @@
 <footer>
 <p>&copy; 2026 North Star Bakery. Placeholder text: 214 Maple Street | (555) 010-2024</p>
 </footer>
+
+<script src="js/storage.js"></script>
+<script src="js/products.js"></script>
 </body>
 </html>
